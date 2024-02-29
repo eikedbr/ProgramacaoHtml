@@ -11,10 +11,28 @@ footer {
 }
 
 header {
-background-color: transparent;
-border-style: outset;
+    background-color: transparent;
+    border-style: outset;
+    border-color: gray;
+}
 
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 
+}
 
+nav a {
+    background-color: transparent;
+    color: gray;
+    text-decoration: none;
 
+}
+
+nav a:hover {
+    background-color: transparent;
+    color: rgb(43, 255, 0);
+    text-decoration: underline;
+    cursor: ew-resize;
 }
