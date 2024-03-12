@@ -1,0 +1,55 @@
+.container {
+    max-width: 800px;
+    max-height: 150px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imagem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(red, green, blue, alpha);
+    transition: transform 0.3s ease; 
+
+}
+
+figcaption {
+    color: white;
+}
+
+header {
+    text-align: center;
+    color: white;
+
+}
+
+body {
+    background-color: black;
+}
+
+figure {
+    width: 100%;
+    background-color: black;
+    position: 40px;
+    bottom: 0;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 35s linear infinite;
+}
+
+@keyframes move {
+    to {
+        background-position: 4500vh;
+    }
+}
+
