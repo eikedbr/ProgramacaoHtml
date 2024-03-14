@@ -1,25 +1,30 @@
 .container {
-    max-width: 800px;
-    max-height: 150px;
+    max-width: 800px;;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
 }
 
-.imagem {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.imagem img {
-    max-width: 100%;
+.container img {
+    width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(red, green, blue, alpha);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+}
 
+.container figure::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3 ease;
 }
 
 figcaption {
@@ -39,7 +44,7 @@ body {
 figure {
     width: 100%;
     background-color: black;
-    position: 40px;
+    position: 60px;
     bottom: 0;
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
@@ -49,7 +54,6 @@ figure {
 
 @keyframes move {
     to {
-        background-position: 4500vh;
+        background-position: 1500vh;
     }
 }
-
